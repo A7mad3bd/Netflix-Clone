@@ -1,0 +1,10 @@
+.Homec {
+    text-align: center;
+    display:grid ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color:rgb(255, 0, 0);
+      margin: 1px;
+      width:auto;
+  }

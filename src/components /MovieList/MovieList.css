@@ -1,0 +1,10 @@
+.listc {
+    text-align: center;
+    display:grid ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color:blue;
+      margin: 1px;
+      width:auto;
+  }
