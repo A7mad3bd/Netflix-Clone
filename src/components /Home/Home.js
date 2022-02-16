@@ -12,12 +12,11 @@
 import '../Home/Home.css';
 import { useState, useEffect } from 'react';
 import MovieList from '../MovieList/MovieList'
-
+import Navbar from '../Navbar/Navbar';
  function HomePage() {
     const [data, setMovie] = useState();
     const getMovies = async () => {
         try {
-//env
             let res = await fetch(`https://movie-li.herokuapp.com/trending`)
             let data = await res.json();
             setMovie(data);
@@ -33,8 +32,11 @@ import MovieList from '../MovieList/MovieList'
     return (
         <>
         <div className='Homec'>
+        <Navbar/>
             {
-                data && (<MovieList movies={data} />)
+                    
+
+                data && (<MovieList  movies={data} />)
             }
             </div>
         </>

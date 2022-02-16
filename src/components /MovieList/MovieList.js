@@ -9,14 +9,17 @@ export default function MovieList(props) {
 
     return (
         <>
-            <div className='listc'>
-                <h2> Movies List </h2>
+            <div className='listc' >
+                <h2 > Movies List </h2>
                 {
                     props.movies.map(datas => {
                         return (
-                            <>
+                           
+                            <div key= {datas.id}>
+                            {console.log(datas.id)}
                                 <Movie movie={datas} />
-                            </>
+                                </div>
+                            
                         )
                     })}
             </div>
